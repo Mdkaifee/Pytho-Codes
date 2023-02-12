@@ -1,0 +1,5 @@
+f=open("text2.txt","a")
+f.write("Hey ! i m creating this file using python")
+f.close()
+f=open("text2.txt","r")
+print(f.read())

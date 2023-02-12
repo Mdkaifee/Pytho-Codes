@@ -1,0 +1,10 @@
+import sqlite3
+con=sqlite3.connect('OurDB.db')
+cur=con.cursor()
+cur.execute("INSERT INTO Product(p_name,price,quantity) VALUES ('Autocad',200,20)")
+cur.execute("INSERT INTO Product(p_name,price,quantity) VALUES ('cad',330,12)")
+cur.execute("INSERT INTO Product(p_name,price,quantity) VALUES ('Auto',250,25)")
+cur.execute("INSERT INTO Product(p_name,price,quantity) VALUES ('Mouse',150,34)")
+print("DATA INSERTED!!!")
+con.commit()
+con.close()
